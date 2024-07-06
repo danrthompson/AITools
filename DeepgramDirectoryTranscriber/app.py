@@ -38,7 +38,7 @@ def transcribe_file(input_path, output_path, deepgram):
 
         # Send the audio to Deepgram for transcription
         response = deepgram.listen.prerecorded.v("1").transcribe_file(
-            payload, options, timeout=Timeout(1200, connect=10)
+            payload, options, timeout=Timeout(1800, connect=10)
         )
 
         # click.echo(
